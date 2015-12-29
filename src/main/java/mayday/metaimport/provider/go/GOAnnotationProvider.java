@@ -95,7 +95,7 @@ public class GOAnnotationProvider extends AbstractAnnotationProvider {
 			e.printStackTrace();
 			return false;
 		}
-		catch(MySQLNonTransientConnectionException e) {
+		catch(SQLNonTransientConnectionException e) {
 			System.out.println("GO MySQLTransientConnection Exception:");
 			e.printStackTrace();
 			return false;
