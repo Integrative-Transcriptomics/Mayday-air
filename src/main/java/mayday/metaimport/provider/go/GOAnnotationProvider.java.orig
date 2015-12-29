@@ -4,8 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.HashMap;
 
+<<<<<<< HEAD
 //import com.mysql.jdbc.exceptions.MySQLNonTransientConnectionException;
 import java.sql.SQLNonTransientConnectionException;
+=======
+import com.mysql.jdbc.exceptions.MySQLNonTransientConnectionException;
+>>>>>>> origin/master
 
 import mayday.core.pluma.PluginInfo;
 import mayday.core.pluma.PluginManagerException;
@@ -95,7 +99,11 @@ public class GOAnnotationProvider extends AbstractAnnotationProvider {
 			e.printStackTrace();
 			return false;
 		}
+<<<<<<< HEAD
+		catch(SQLNonTransientConnectionException e) {
+=======
 		catch(MySQLNonTransientConnectionException e) {
+>>>>>>> origin/master
 			System.out.println("GO MySQLTransientConnection Exception:");
 			e.printStackTrace();
 			return false;
